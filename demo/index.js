@@ -31,6 +31,6 @@ function onLoaded() {
     var timeStepInput = document.getElementById('time-step');
     timeStepInput.addEventListener('change', function () {
         var timeStep = parseFloat(timeStepInput.value);
-        simulation.setTimeStep(timeStep);
+        timeStep && simulation.setTimeStep(timeStep);
     });
 }
