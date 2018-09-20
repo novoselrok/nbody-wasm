@@ -12,7 +12,7 @@ function ptrToArray(ptr, length) {
 }
 
 function getData(filename) {
-    return fetch('inputs/' + filename)
+    return fetch('demo/inputs/' + filename)
         .then(function (response) {
             return response.text();
         })
