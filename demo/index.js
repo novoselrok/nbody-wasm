@@ -1,4 +1,4 @@
-var W = window.innerWidth - 3, H = window.innerHeight - 3;
+var W = window.innerWidth - 12, H = window.innerHeight - 12;
 
 Module.onRuntimeInitialized = function () {
     if (document.readyState === 'complete') {
@@ -19,7 +19,7 @@ function onLoaded() {
     simulation.start(filename);
 
     window.addEventListener('resize', function () {
-        simulation.setDimensions(window.innerWidth - 3, window.innerHeight - 3);
+        simulation.setDimensions(window.innerWidth - 12, window.innerHeight - 12);
     });
 
     var bodyDataSelect = document.getElementById('body-data');

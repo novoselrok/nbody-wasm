@@ -2,8 +2,10 @@
 
 A C++ implementation of the Barnes-Hut algorithm for n-body simulation and compiled to WASM.
 
+Link to the simulations - https://novoselrok.github.io/nbody-wasm/
+
 # References
-- https://github.com/chindesaurus/BarnesHut-N-Body *(massive thanks to the author for the code and the data)*
+- https://github.com/chindesaurus/BarnesHut-N-Body **(massive thanks to the author for the code and the data)**
 - http://arborjs.org/docs/barnes-hut
 - http://www.cs.ucy.ac.cy/~ppapap01/nbody/Presentation.pdf
 - https://en.wikipedia.org/wiki/N-body_problem
