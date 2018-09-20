@@ -11,9 +11,9 @@ std::vector<std::shared_ptr<Body>> bodies;
 double R;
 
 void _init(int n_bodies, double *x_pos, double *y_pos, double *x_vel, double *y_vel, double *mass, double radius) {
+    bodies.clear();
     R = radius;
     for (int i = 0; i < n_bodies; i++) {
-//        printf("%f\n", mass[i]);
         bodies.push_back(std::make_shared<Body>(x_pos[i], y_pos[i], x_vel[i], y_vel[i], mass[i]));
     }
 }
@@ -33,12 +33,6 @@ void _step(double dt) {
         tree->updateForce(body);
         body->update(dt);
     }
-//
-//    for (const auto &body : bodies) {
-//        printf("%10.3E %10.3E %10.3E %10.3E\n", body->x, body->y, body->vx, body->vy);
-//    }
-//
-//    printf("======\n");
 }
 
 double *_getXPos() {
